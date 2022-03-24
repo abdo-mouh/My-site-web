@@ -1,0 +1,331 @@
+.container{
+    width: 1100px;
+    margin: auto;
+}
+.clearfix{
+    clear: both;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+}
+header{
+    height: 660px;
+    background-size: cover ;
+    background-image: url("../image/images/header-bg.jpg");
+    position: relative;
+}
+header .header_head {
+    padding: 20px 0px 0px 0px; 
+}
+header .header_head .logo{
+    float: left;
+}
+header .header_head nav{
+    float: right;
+}
+header .header_head nav ul li{
+    display: inline-block;
+    padding:0px 0px 0px 10px;
+    
+}
+header .header_head nav ul li a{
+    text-decoration:none;
+    color: #FFF;
+    font-size: 20px;
+    padding: 6px 13px;
+}
+header .header_head nav ul li a.active,
+header .header_head nav ul li a:hover{
+    background-color: #70cbce;
+    border-radius: 5px;
+    
+
+}
+
+
+header .header_content{
+    width: 700px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+header .header_content h2{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 50px ;
+    margin-bottom: 2%;
+}
+header .header_content p {
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+header .header_content button{
+    
+    width: 180px;
+    border: 0;
+    outline: none;
+    padding: 25px;
+    font-size: 18px;
+    margin-left: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header .header_content  .btn1{
+    background-color: #FFF;
+    color:#000;
+}
+header .header_content  .btn1:hover{
+    background-color: #000;
+    color:#fff;
+    font-weight: bolder;
+}
+header .header_content .btn2{
+    background-color: #70cbce;
+    color: #FFF;
+    
+}
+header .header_content  .btn2:hover{
+    background-color: #fff;
+    color:#70cbce;
+    font-weight: bolder;
+}
+header .header_footer {
+    
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    border-radius: 18px;
+    border: 2px solid #FFF;
+    
+}
+header .header_footer .scroll{
+    width: 2px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    position: relative;
+    top: 4px;
+    animation: scrolling  3s ease-in-out infinite;
+}
+/*Animation*/
+@keyframes scrolling{
+0%{
+    opacity: 0;
+    top: 4px;
+}
+50%{
+    opacity: 1;
+    top: 15px;
+}
+100%{
+    opacity: 0;
+    top: 25px;
+}
+}
+/* be First Section*/
+section.BeFirst{
+    height: 600px;
+    background-image: url('../image/images/be-the-first-bg.jpg');
+    padding-top: 10%;
+    text-align: center;
+    color: #FFF;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 20%;
+}
+
+section.BeFirst .BeFirst_content h2{
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: -80px;
+}
+section.BeFirst .BeFirst_content p{
+    margin: 2% 0;
+    font-size: 20px;
+}
+section.BeFirst .BeFirst_img img{
+    width: 400px;
+}
+
+
+/* Section Feature */
+section.feature{
+    padding-bottom:20% ;
+    margin-top: -650px;
+
+}
+section.feature .feature_feat{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+section.feature .feature_feat:nth-of-type(1){
+    margin-left: 0;
+}
+section.feature .feature_feat hr{
+    height: 5px;
+    
+    border: 0;
+}
+section.feature .feature_feat:nth-of-type(1) hr{
+    background-color: #6bc01b;
+}
+section.feature .feature_feat:nth-of-type(2) hr{
+    background-color: #70cbce;
+}
+section.feature .feature_feat:nth-of-type(3) hr{
+    background-color: #fdc05d;
+}
+section.feature .feature_feat h2{
+    font-size: 18px;
+    margin-top: 5%;
+}
+section.feature .feature_feat p{
+    margin-top: 5%;
+    color: #ccc;
+    line-height: 1.3;
+}
+/*  section   Pricing   */
+    section.pricing {
+        height:700px;
+        padding: 10% 0;
+        background-color: #70cbce;
+        text-align: center;
+        margin-top: -40px;
+       
+    }
+    section.pricing h2{
+        font-size:45px;
+        color: #FFF;
+    }
+    section.pricing p{
+        margin-top: 20px;
+        font-size:18px;
+        color: #FFF;
+    }
+    section.pricing .pricing_flex{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin:auto ;
+        margin-top: 30px;
+        
+    }
+    section.pricing .pricing_flex .flex_item{
+        width: 30%;
+        float: left;
+       ;
+    }
+    section.pricing .pricing_flex .flex_item:nth-of-type(2){
+        margin: 0 0.3px;
+    }
+    section.pricing .pricing_flex .flex_item:nth-of-type(1),
+    section.pricing .pricing_flex .flex_item:nth-of-type(3){
+        margin-top:20px ;
+    }
+    section.pricing .pricing_flex .flex_item ul{
+        list-style: none;
+        background-color: #FFF;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+    }
+    section.pricing .pricing_flex .flex_item ul .price{
+        background-color: #231f20;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px;
+        color: #FFF;
+ 
+    }
+    section.pricing .pricing_flex .flex_item ul:hover {
+        margin-top: -10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+    section.pricing .pricing_flex .flex_item ul .doller{
+        background-color: #231F20;
+        padding: 15px;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 30px;
+        transition: all 0.5s ease-in-out;
+    }
+    section.pricing .pricing_flex .flex_item ul:hover .doller{
+        background-color: #333;
+    }
+    section.pricing .pricing_flex .flex_item ul .doller small{
+        font-weight: normal;
+        color: #ddd;
+    }
+    section.pricing .pricing_flex .flex_item ul li.content{
+        color: #929496;
+        padding: 10px;
+        font-size: 15px;
+    }
+    section.pricing .pricing_flex .flex_item ul li.list{
+        padding: 10px;
+        border: 1px solid #eee;
+        font-weight: bold;
+    }
+    section.pricing .pricing_flex .flex_item ul li.btn{
+        padding: 15px;
+        color: #70cbce;
+        text-transform: uppercase;
+    }
+    section.pricing .pricing_flex .flex_item  .btn:hover{
+        background-color: #eee;
+    }
+
+    /**** Invite  *****/
+    section.invite{
+        background-color: #9e9e9ef5;
+        height: auto;
+        padding:  5% 0;
+        text-align: center;
+    }
+
+    section.invite h2{
+        font-size: 40px;
+        margin-bottom: 2%;
+    }
+    section.invite p{
+        margin-bottom: 2%;
+    }
+    section.invite input{
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 50px;
+        padding: 10px;
+        border: 0;
+        outline: 0;
+        margin-bottom: 2%;
+    }
+    section.invite input::-webkit-input-placeholder{
+        color: #aaa;
+    }
+    section.invite button{
+        width: 150px;
+        height: 50px;
+        background-color: #70cbce;
+        padding: 10px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+
+ 
